@@ -1,0 +1,48 @@
+@charset "utf-8";
+@media screen and(min-width: 480px) and(max-width: 767px) {
+  .index-item {
+    width: 50%;
+  }
+}
+
+@media screen and(max-width: 480px) {
+  .header {
+    .header-logo {
+      width: 70px;
+      height: 24px;
+      margin-top: 38px;
+    }
+    .btn-primary {
+      padding: 3px 5px;
+    }
+  }
+  .training-camp-title {
+    font-size: 18px;
+  }
+  .training-camp {
+    height: 230px;
+    .training-camp-img {
+      height: 170px;
+    }
+    .teacher {
+      height: 230px;
+    }
+
+    .training-camp-title {
+      height: 60px;
+      line-height: 60px;
+    }
+
+    .teacher-info {
+      padding-left: 40px;
+      padding-top: 20px;
+    }
+    //按钮操作样式
+    .action {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+  }
+
+}

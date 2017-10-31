@@ -1,0 +1,42 @@
+.user-manager-header {
+	padding: 20px 0;
+}
+
+.user-manager-logo {
+	width: 170px;
+	height: 50px;
+}
+
+.table thead>tr>th, .table tbody>tr>th, .table tfoot>tr>th, .table thead>tr>td,
+	.table tbody>tr>td, .table tfoot>tr>td {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.table thead>tr>th:first-child, .table tbody>tr>th:first-child, .table tfoot>tr>th:first-child,
+	.table thead>tr>td:first-child, .table tbody>tr>td:first-child, .table tfoot>tr>td:first-child
+	{
+	width: 60px;
+	text-align: left;
+}
+
+.wrap {
+	position: relative;
+	padding: 30px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	background: #fff;
+}
+
+.pagination {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	margin: 0;
+}
+
+.user-manager-action {
+	margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=user-manager.css.map */
