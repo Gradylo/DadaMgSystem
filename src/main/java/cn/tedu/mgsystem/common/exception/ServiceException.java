@@ -1,4 +1,4 @@
-package cn.tedu.mgsystem.project.exception;
+package cn.tedu.mgsystem.common.exception;
 
 public class ServiceException extends RuntimeException {
 	public ServiceException() {

@@ -1,4 +1,4 @@
-package cn.tedu.mgsystem.project.exception;
+package cn.tedu.mgsystem.common.exception;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
