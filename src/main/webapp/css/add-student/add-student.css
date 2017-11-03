@@ -1,0 +1,250 @@
+@charset "UTF-8";
+.w {
+  width: 1000px; }
+
+.header {
+  height: 100px;
+  line-height: 100px; }
+  .header .header-logo {
+    margin-top: 21px; }
+
+.index-bg {
+  height: 100%;
+  background: url(../../img/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/*覆盖boostrap 基本按钮样式*/
+.btn-primary {
+  transition: .3s;
+  background: #49a7ff;
+  border: 1px solid #49a7ff;
+  box-shadow: 0 3px 6px 1px rgba(73, 167, 255, 0.5); }
+
+.btn-primary:hover {
+  background: #1976d2;
+  border: 1px solid #1976d2; }
+
+.btn-danger {
+  transition: .3s;
+  background: #d9534f;
+  border: 1px solid #d9534f;
+  box-shadow: 0 3px 6px 1px rgba(217, 83, 79, 0.5); }
+
+.btn-danger:hover {
+  background: #c9302c;
+  border: 1px solid #c9302c; }
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.edit {
+  transition: .07s;
+  border: none !important;
+  border-bottom: 2px solid #6ab7ff !important; }
+
+input[disabled] {
+  background: transparent; }
+
+.add-student-bg {
+  height: 100%;
+  background: url(../../img/student-detail-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.w {
+  border-radius: 10px;
+  box-shadow: 0 5px 30px -5px #9c9c9c; }
+
+@media screen and (min-width: 1200px) {
+  .w, .header-container {
+    width: 960px;
+    margin: 0 auto; }
+
+  .student-wrap .seat {
+    float: left;
+    width: 630px;
+    background: #6ab7ff;
+    height: 650px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+    .student-wrap .seat .seat-title {
+      color: #fff; }
+    .student-wrap .seat .seat-list li {
+      float: left;
+      margin: 0 20px 15px 20px; }
+      .student-wrap .seat .seat-list li .student-item {
+        width: 60px;
+        height: 60px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px -1px #2e5eff;
+        transition: .3s; }
+      .student-wrap .seat .seat-list li .student-item:hover {
+        cursor: pointer;
+        box-shadow: 0 5px 20px -4px #3b7eff; }
+  .student-wrap .student-detail {
+    float: left;
+    width: 330px;
+    background: #fff;
+    height: 650px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .student-wrap .student-detail-txt {
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .student-wrap .student-detail-txt span {
+      float: left;
+      text-align: right;
+      width: 100px;
+      margin-right: 10px; }
+    .student-wrap .student-detail-txt input {
+      float: left;
+      border: none;
+      outline: none; } }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .w, .header-container {
+    width: 870px;
+    margin: 0 auto; }
+
+  .student-wrap .seat {
+    float: left;
+    width: 570px;
+    height: 600px;
+    background: #6ab7ff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+    .student-wrap .seat .seat-title {
+      color: #fff; }
+    .student-wrap .seat .seat-list li {
+      float: left;
+      margin: 0 20px 15px 20px; }
+      .student-wrap .seat .seat-list li .student-item {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px -1px #2e5eff;
+        transition: .3s; }
+      .student-wrap .seat .seat-list li .student-item:hover {
+        cursor: pointer;
+        box-shadow: none; }
+  .student-wrap .student-detail {
+    float: left;
+    width: 300px;
+    height: 600px;
+    background: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .student-wrap .student-detail-txt {
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .student-wrap .student-detail-txt span {
+      float: left;
+      text-align: right;
+      width: 100px;
+      margin-right: 10px; }
+    .student-wrap .student-detail-txt input {
+      float: left;
+      border: none;
+      outline: none; } }
+@media screen and (max-width: 767px) {
+  .w, .header-container {
+    width: 570px;
+    margin: 0 auto; }
+
+  .student-wrap .seat {
+    float: left;
+    width: 330px;
+    height: 560px;
+    background: #6ab7ff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
+    .student-wrap .seat .seat-title {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold; }
+    .student-wrap .seat .seat-list li {
+      float: left;
+      margin: 0 5px 15px 5px; }
+      .student-wrap .seat .seat-list li .student-item {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 5px 20px -1px #2e5eff;
+        transition: .3s; }
+      .student-wrap .seat .seat-list li .student-item:hover {
+        cursor: pointer;
+        box-shadow: none; }
+  .student-wrap .student-detail {
+    float: left;
+    width: 240px;
+    height: 560px;
+    background: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .student-wrap .student-detail button {
+      width: 100%;
+      margin-bottom: 10px; }
+    .student-wrap .student-detail .student-detail-txt {
+      overflow: hidden;
+      margin-bottom: 10px; }
+      .student-wrap .student-detail .student-detail-txt span {
+        float: left;
+        text-align: right;
+        width: 100px;
+        margin-right: 10px; }
+      .student-wrap .student-detail .student-detail-txt input {
+        float: left;
+        outline: none;
+        border: none;
+        width: 100px; }
+  .student-wrap .student-info-title {
+    font-size: 18px;
+    font-weight: bold; } }
+.student-name {
+  color: #fff;
+  text-align: center;
+  margin-top: 5px; }
+
+/*# sourceMappingURL=add-student.css.map */

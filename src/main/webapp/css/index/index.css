@@ -1,0 +1,187 @@
+@charset "UTF-8";
+.w {
+  width: 1000px; }
+
+.header {
+  height: 100px;
+  line-height: 100px; }
+  .header .header-logo {
+    margin-top: 21px; }
+
+.index-bg {
+  height: 100%;
+  background: url(../../img/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/*覆盖boostrap 基本按钮样式*/
+.btn-primary {
+  transition: .3s;
+  background: #49a7ff;
+  border: 1px solid #49a7ff;
+  box-shadow: 0 3px 6px 1px rgba(73, 167, 255, 0.5); }
+
+.btn-primary:hover {
+  background: #1976d2;
+  border: 1px solid #1976d2; }
+
+.btn-danger {
+  transition: .3s;
+  background: #d9534f;
+  border: 1px solid #d9534f;
+  box-shadow: 0 3px 6px 1px rgba(217, 83, 79, 0.5); }
+
+.btn-danger:hover {
+  background: #c9302c;
+  border: 1px solid #c9302c; }
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.index-content {
+  margin-top: 60px; }
+
+.training-camp {
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 30px -5px #9c9c9c; }
+  .training-camp .training-camp-img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: url(../../img/saulo-mohana.jpg) no-repeat;
+    background-size: cover;
+    transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear; }
+  .training-camp .training-camp-title {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #fff; }
+    .training-camp .training-camp-title .action {
+      opacity: 0;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .training-camp .training-camp-title h3 {
+      line-height: 100px;
+      color: #333; }
+  .training-camp .teacher {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  .training-camp .teacher-item {
+    line-height: 26px; }
+  .training-camp .teacher-info {
+    padding-left: 40px;
+    padding-top: 40px;
+    opacity: 0;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+
+.training-camp:hover .teacher {
+  cursor: pointer;
+  opacity: 1;
+  background: rgba(0, 153, 255, 0.4); }
+
+.training-camp:hover .teacher-info, .training-camp:hover .action {
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s; }
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .index-item {
+    width: 50%; } }
+@media screen and (max-width: 480px) {
+  .header .header-logo {
+    width: 70px;
+    height: 24px;
+    margin-top: 38px; }
+  .header .btn-primary {
+    padding: 3px 5px; }
+
+  .training-camp {
+    height: 230px; }
+    .training-camp .training-camp-img {
+      height: 170px; }
+    .training-camp .teacher {
+      height: 170px; }
+    .training-camp .training-camp-title {
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px; }
+      .training-camp .training-camp-title h3 {
+        height: 60px;
+        line-height: 60px; }
+    .training-camp .teacher-info {
+      padding-left: 40px;
+      padding-top: 20px; } }
+
+/*# sourceMappingURL=index.css.map */

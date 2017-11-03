@@ -4,6 +4,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import cn.tedu.mgsystem.user.dao.UserDao;
+import cn.tedu.mgsystem.user.entity.User;
+
 public class TestUserService {
 	ClassPathXmlApplicationContext ctx;
 	
@@ -14,6 +17,9 @@ public class TestUserService {
 	}
 	@Test
 	public void test1(){
+		UserDao dao=ctx.getBean(UserDao.class);
+		User u=dao.findByAccount("temple");
+		System.out.println(u);
 	}
 	
 }

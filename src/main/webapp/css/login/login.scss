@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import "../base/common";
+
+$w20: 20px;
+$w14: 14px;
+.login-bg{
+  height: 100%;
+  background: url(../../img/login-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+@media screen and(max-width: 480px) {
+  .login {
+    width: 100%;
+    padding: 30px;
+    margin: 100px auto 0 auto;
+    //border-radius: 10px;
+    background: $fff;
+    //box-shadow: 0 0 50px 2px #717376;
+    border-top: 2px solid $box-show-cd;
+    border-bottom: 2px solid $box-show-cd;
+    //输入框内边距
+    input {
+      padding-left: 40px;
+      border: none;
+      border-bottom: 1px solid $box-show-cd;
+      border-bottom: 1px solid $box-show-cd;
+    }
+    input:focus {
+      box-shadow: none;
+      outline: none;
+    }
+    .form-control {
+      border: none;
+      box-shadow: none;
+    }
+    .logo {
+      width: 175px;
+      height: 70px;
+      margin: 30px 0 50px 0;
+    }
+
+    .input-content {
+      position: relative;
+      border-bottom: 2px solid #9c9c9c;
+    }
+    .browse, .pwd-img, .account-img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .browse {
+      right: 10px;
+      height: $w14;
+      width: $w20;
+    }
+    .pwd-img, .account-img {
+      height: $w14;
+      width: $w14;
+      left: 10px;
+    }
+  }
+}
+
+@media screen and(min-width: 480px) {
+  .login {
+    width: 400px;
+    padding: 50px;
+    margin: 100px auto 0 auto;
+    border-radius: 10px;
+    background: $fff;
+    @include wrap-show;
+    //输入框内边距
+    input {
+      padding-left: 40px;
+      height:40px;
+    }
+    .logo {
+      width: 175px;
+      height: 58px;
+      margin: 30px 0 50px 0;
+    }
+    .input-img {
+      height: $w20;
+      width: $w20;
+    }
+    .input-content {
+      position: relative;
+    }
+    .browse, .pwd-img, .account-img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .browse {
+      right: 10px;
+    }
+    .browse:hover {
+     cursor: pointer;
+    }
+      .pwd-img, .account-img {
+      width: $w20;
+      height: $w20;
+      left: 10px;
+    }
+  }
+}

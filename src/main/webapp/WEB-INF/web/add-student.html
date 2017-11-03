@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建学员</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <link rel="stylesheet" href="../../css/base/base.css">
+    <link rel="stylesheet" href="../../core/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../css/base/common.css">
+    <link rel="stylesheet" href="../../css/add-training-camp/add-training-camp.css">
+    <link rel="stylesheet" href="../../css/user-manager/user-manager.css">
+    <link rel="stylesheet" href="../../css/base/reset.css">
+    <link rel="stylesheet" href="../../css/add-student/add-student.css">
+</head>
+<body class="add-student-bg">
+<div class="clearfix student-wrap">
+    <header class="header text-right header-container">
+        <img class="header-logo pull-left" src="../../img/small-logo.png" alt="logo">
+        <button class="btn btn-primary " id="js-change-room">切换教室类型</button>
+    </header>
+    <div class="mt30 w clearfix">
+        <div class="seat  col-xs-12">
+            <h2 class="text-center seat-title mb30 mt30">座位表</h2>
+
+            <div class="list-unstyled seat-list clearfix" id="js-seat-list">
+                <ul class="seat-left pull-left list-unstyled" id="js-seat-left">
+
+                </ul>
+                <ul class="seat-right pull-right list-unstyled" id="js-seat-right">
+                </ul>
+
+            </div>
+        </div>
+        <div class="student-detail col-xs-12">
+            <h2 class="text-center mb30 mt30 student-info-title">学员详细信息</h2>
+            <section id="js-student-detail">
+                <div class="student-detail-txt">
+                    <span>座位编号：</span>
+                    <input type="text" value="0001" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>学员命名：</span>
+                    <input type="text" value="张飞" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>咨询老师姓名：</span>
+                    <input type="text" value="刘备" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>学&emsp;&emsp;历：</span>
+                    <input type="text" value="小学" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>专&emsp;&emsp;业：</span>
+                    <input type="text" value="武术" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>是否有基础：</span>
+                    <input type="text" value="是" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>信息来源：</span>
+                    <input type="text" value="google" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>面资情况：</span>
+                    <input type="text" value="0001" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>学习时长：</span>
+                    <input type="text" value="3小时04分" disabled>
+                </div>
+                <div class="student-detail-txt">
+                    <span>阶&emsp;&emsp;段：</span>
+                    <input type="text" value="第二阶段" disabled>
+                </div>
+                <div class="mt30 text-center">
+                    <button class="btn btn-primary b  btn-sm" id="js-edit-seat-info"><i class="edit-icon"></i>编辑座位信息
+                    </button>
+                    <button class="btn btn-danger  btn-sm"><i class="cancel-seat-icon"></i>取消订座</button>
+                    <button class="btn btn-danger  btn-sm"><i class="cancel-seat-icon"></i>移除该座位</button>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<script src="../../core/jquery-1.11.3.js"></script>
+<script src="../../plugins/nicescroll/jquery.nicescroll.min.js"></script>
+<script src="../../js/nicescroll.js"></script>
+<script src="../../js/add-student.js"></script>
+
+</body>
+</html>

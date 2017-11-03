@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <link rel="stylesheet" href="../../css/base/base.css">
+    <link rel="stylesheet" href="../../core/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../../plugins/bootstrap-dialog/bootstrap-dialog.min.css">
+    <!--<link rel="stylesheet" href="core/bootstrap-table/bootstrap-table.css">-->
+    <link rel="stylesheet" href="../../css/base/common.css">
+    <link rel="stylesheet" href="../../css/base/reset.css">
+    <link rel="stylesheet" href="../../css/user-manager/user-manager.css">
+</head>
+
+<body class="index-bg">
+<div class="container">
+    <header class="header" id="js-u-m-header">
+        <img class="header-logo pull-left" src="../../img/small-logo.png" alt="logo">
+    </header>
+    <div class="wrap" id="js-wrap">
+        <div class="user-manager-action text-right">
+            <button class="btn btn-primary" id="js-add-staff">添加员工</button>
+            <button class="btn btn-danger">全部删除</button>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered table-condensed">
+                <thead>
+                <tr>
+                    <th>
+                        <div>
+                            <input type="checkbox">
+                            <span>全选</span>
+                        </div>
+                    </th>
+                    <th>员工号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>技术方向</th>
+                    <th>部门</th>
+                    <th>职位</th>
+                    <th>入职时间</th>
+                    <th>邮箱</th>
+                    <th>电话</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <div><input type="checkbox" class="checkbox"></div>
+                    </td>
+                    <td>1</td>
+                    <td>明明</td>
+                    <td>男</td>
+                    <td>JAVA</td>
+                    <td>质量保障部</td>
+                    <td>职业发展顾问</td>
+                    <td>2015-10-10</td>
+                    <td>1@.com</td>
+                    <td>13888888888</td>
+                    <td>
+                        <button class="btn btn-primary btn-xs">详情</button>
+                        <button class="btn btn-danger btn-xs">删除</button>
+                        <button class="btn btn-danger btn-xs">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div><input type="checkbox" class="checkbox"></div>
+                    </td>
+                    <td>1</td>
+                    <td>明明</td>
+                    <td>男</td>
+                    <td>JAVA</td>
+                    <td>质量保障部</td>
+                    <td>职业发展顾问</td>
+                    <td>2015-10-10</td>
+                    <td>1@.com</td>
+                    <td>18888888888</td>
+                    <td>
+                        <button class="btn btn-primary btn-xs">详情</button>
+                        <button class="btn btn-danger btn-xs">删除</button>
+                        <button class="btn btn-danger btn-xs">修改</button>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="pull-right">
+            <ul class="pagination page ">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">上一页</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">下一页</a></li>
+                <li><a href="#">尾页</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="../../core/jquery-1.11.3.js"></script>
+<script src="../../core/bootstrap/bootstrap.js"></script>
+<script src="../../plugins/bootstrap-dialog/bootstrap-dialog.min.js"></script>
+<script src="../../plugins/nicescroll/jquery.nicescroll.min.js"></script>
+<script src="../../js/nicescroll.js"></script>
+<script src="../../js/add-staff.js"></script>
+<!--<script src="core/bootstrap-table/bootstrap-table.js"></script>-->
+<script>
+    var screenH = document.body.clientHeight || document.documentElement.clientHeight;
+    var header = document.querySelector("#js-u-m-header");
+    var wrap = document.querySelector("#js-wrap");
+    function getTableH() {
+        var headerH = header.clientHeight;
+        wrap.style.height = screenH - headerH - 30 + "px";
+    }
+    getTableH();
+    window.onresize = getTableH;
+</script>
+</body>
+</html>

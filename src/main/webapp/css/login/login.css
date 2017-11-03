@@ -1,0 +1,157 @@
+@charset "UTF-8";
+.w {
+  width: 1000px; }
+
+.header {
+  height: 100px;
+  line-height: 100px; }
+  .header .header-logo {
+    margin-top: 21px; }
+
+.index-bg {
+  height: 100%;
+  background: url(../../img/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/*覆盖boostrap 基本按钮样式*/
+.btn-primary {
+  transition: .3s;
+  background: #49a7ff;
+  border: 1px solid #49a7ff;
+  box-shadow: 0 3px 6px 1px rgba(73, 167, 255, 0.5); }
+
+.btn-primary:hover {
+  background: #1976d2;
+  border: 1px solid #1976d2; }
+
+.btn-danger {
+  transition: .3s;
+  background: #d9534f;
+  border: 1px solid #d9534f;
+  box-shadow: 0 3px 6px 1px rgba(217, 83, 79, 0.5); }
+
+.btn-danger:hover {
+  background: #c9302c;
+  border: 1px solid #c9302c; }
+
+.animated {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+.login-bg {
+  height: 100%;
+  background: url(../../img/login-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+@media screen and (max-width: 480px) {
+  .login {
+    width: 100%;
+    padding: 30px;
+    margin: 100px auto 0 auto;
+    background: #fff;
+    border-top: 2px solid #9c9c9c;
+    border-bottom: 2px solid #9c9c9c; }
+    .login input {
+      padding-left: 40px;
+      border: none;
+      border-bottom: 1px solid #9c9c9c;
+      border-bottom: 1px solid #9c9c9c; }
+    .login input:focus {
+      box-shadow: none;
+      outline: none; }
+    .login .form-control {
+      border: none;
+      box-shadow: none; }
+    .login .logo {
+      width: 175px;
+      height: 70px;
+      margin: 30px 0 50px 0; }
+    .login .input-content {
+      position: relative;
+      border-bottom: 2px solid #9c9c9c; }
+    .login .browse, .login .pwd-img, .login .account-img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .login .browse {
+      right: 10px;
+      height: 14px;
+      width: 20px; }
+    .login .pwd-img, .login .account-img {
+      height: 14px;
+      width: 14px;
+      left: 10px; } }
+@media screen and (min-width: 480px) {
+  .login {
+    width: 400px;
+    padding: 50px;
+    margin: 100px auto 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 30px -5px #9c9c9c; }
+    .login input {
+      padding-left: 40px;
+      height: 40px; }
+    .login .logo {
+      width: 175px;
+      height: 58px;
+      margin: 30px 0 50px 0; }
+    .login .input-img {
+      height: 20px;
+      width: 20px; }
+    .login .input-content {
+      position: relative; }
+    .login .browse, .login .pwd-img, .login .account-img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+    .login .browse {
+      right: 10px; }
+    .login .browse:hover {
+      cursor: pointer; }
+    .login .pwd-img, .login .account-img {
+      width: 20px;
+      height: 20px;
+      left: 10px; } }
+
+/*# sourceMappingURL=login.css.map */

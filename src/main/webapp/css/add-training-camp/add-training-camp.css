@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.w {
+  width: 1000px; }
+
+.header {
+  height: 100px;
+  line-height: 100px; }
+  .header .header-logo {
+    margin-top: 21px; }
+
+.index-bg {
+  height: 100%;
+  background: url(../../img/bg.jpg);
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/*覆盖boostrap 基本按钮样式*/
+.btn-primary {
+  transition: .3s;
+  background: #49a7ff;
+  border: 1px solid #49a7ff;
+  box-shadow: 0 3px 6px 1px rgba(73, 167, 255, 0.5); }
+
+.btn-primary:hover {
+  background: #1976d2;
+  border: 1px solid #1976d2; }
+
+.btn-danger {
+  transition: .3s;
+  background: #d9534f;
+  border: 1px solid #d9534f;
+  box-shadow: 0 3px 6px 1px rgba(217, 83, 79, 0.5); }
+
+.btn-danger:hover {
+  background: #c9302c;
+  border: 1px solid #c9302c; }
+
+@media screen and (max-width: 480px) {
+  .create-wrap {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-top: 2px solid #9c9c9c;
+    border-bottom: 2px solid #9c9c9c; }
+
+  .tip-txt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+
+  .input-bg {
+    line-height: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #9c9c9c; }
+    .input-bg .input-txt {
+      border: none;
+      background: none;
+      line-height: 44px;
+      height: 44px;
+      width: 130px; } }
+@media screen and (min-width: 480px) {
+  .create-wrap {
+    width: 500px;
+    margin: 30px auto 0 auto;
+    box-shadow: 0 5px 20px -5px #9c9c9c;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 50px; }
+
+  .tip-txt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+
+  .input-bg {
+    background: #f0f0f0;
+    line-height: 44px;
+    height: 44px;
+    margin-bottom: 10px; }
+    .input-bg span {
+      margin-left: 15px; }
+
+  .input-txt {
+    border: none;
+    background: none;
+    line-height: 44px;
+    height: 44px; } }
+
+/*# sourceMappingURL=add-training-camp.css.map */

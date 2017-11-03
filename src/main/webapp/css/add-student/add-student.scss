@@ -1,0 +1,291 @@
+@charset "utf-8";
+@import "../base/common";
+
+@mixin border-left($size) {
+  border-top-left-radius: $size;
+  border-bottom-left-radius: $size;
+}
+
+@mixin border-right($size) {
+  border-top-right-radius: $size;
+  border-bottom-right-radius: $size;
+}
+
+@mixin student-item-show {
+  box-shadow: 0 5px 20px -1px #2e5eff;
+}
+
+//点击编辑座位信息样式
+.edit {
+  transition: .07s;
+  border: none !important;
+  border-bottom: 2px solid #6ab7ff !important;;
+}
+
+//输入框禁用后背景透明
+input[disabled] {
+  background: transparent;
+}
+.student-wrap{
+  padding-bottom:100px;
+}
+//背景图
+.add-student-bg {
+  height: 100%;
+  background: url(../../img/student-detail-bg.jpg) no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+//.edit-icon,.cancel-seat-icon{
+//  display: inline-block;
+//  width: 12px;
+//  height: 12px;
+//  margin-right:5px;
+//}
+//.edit-icon{
+//  background: url(../../img/edit.png) no-repeat center;
+//}
+//.cancel-seat-icon{
+//  background: url(../../img/delete.png) no-repeat center;
+//}
+//screen>1200 style
+.w {
+  border-radius: 10px;
+  @include wrap-show;
+}
+
+@media screen and (min-width: 1200px) {
+  .w, .header-container {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .student-wrap {
+    .seat {
+      float: left;
+      width: 630px;
+      background: #6ab7ff;
+      height: 650px;
+      @include border-left(10px);
+
+      .seat-title {
+        color: $fff;
+      }
+      .seat-list {
+        //.seat-left {
+        //  width: 200px;
+        //}
+        //.seat-right {
+        //  width: 300px;
+        //}
+        li {
+          float: left;
+          margin: 0 20px 15px 20px;
+
+          //座位
+          .student-item {
+            width: 60px;
+            height: 60px;
+            background: $fff;
+            border-radius: 5px;
+            @include student-item-show;
+            transition: .3s;
+          }
+
+          .student-item:hover {
+            cursor: pointer;
+            box-shadow: 0 5px 20px -4px #3b7eff;
+          }
+
+        }
+      }
+    }
+    .student-detail {
+      float: left;
+      width: 330px;
+      background: $fff;
+      height: 650px;
+      @include border-right(10px);
+
+    }
+
+    .student-detail-txt {
+      //清除浮动
+      overflow: hidden;
+      margin-bottom: 10px;
+      span {
+        float: left;
+        text-align: right;
+        width: 100px;
+        margin-right: 10px;
+      }
+      input {
+        float: left;
+        border: none;
+        outline: none;
+
+      }
+    }
+  }
+}
+
+//screen>768 && screen<1199 style
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .w, .header-container {
+    width: 870px;
+    margin: 0 auto;
+  }
+  .student-wrap {
+    //margin-top: 50px;
+    .seat {
+      float: left;
+      width: 570px;
+      height: 600px;
+      background: #6ab7ff;
+      @include border-left(10px);
+
+      .seat-title {
+        color: $fff;
+      }
+      .seat-list {
+        //.seat-left {
+        //  width: 180px;
+        //}
+        //.seat-right {
+        //  width: 270px;
+        //}
+        li {
+          float: left;
+          margin: 0 20px 15px 20px;
+
+          //座位
+          .student-item {
+            width: 50px;
+            height: 50px;
+            background: $fff;
+            border-radius: 5px;
+            @include student-item-show;
+            transition: .3s;
+          }
+          .student-item:hover {
+            cursor: pointer;
+            box-shadow: none;
+          }
+
+        }
+      }
+    }
+    .student-detail {
+      float: left;
+      width: 300px;
+      height: 600px;
+      background: $fff;
+      @include border-right(10px);
+
+    }
+    .student-detail-txt {
+      overflow: hidden;
+      margin-bottom: 10px;
+      span {
+        float: left;
+        text-align: right;
+        width: 100px;
+        margin-right: 10px;
+      }
+      input {
+        float: left;
+        border: none;
+        outline: none;
+      }
+    }
+
+  }
+}
+
+//screen <767 style
+@media screen and (max-width: 767px) {
+  .w, .header-container {
+    width: 570px;
+    margin: 0 auto;
+  }
+  .student-wrap {
+    .seat {
+      float: left;
+      width: 330px;
+      height: 560px;
+      background: #6ab7ff;
+      @include border-left(10px);
+      .seat-title {
+        color: $fff;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .seat-list {
+        //.seat-left {
+        //  width: 120px;
+        //}
+        //.seat-right {
+        //  width: 180px;
+        //}
+        li {
+          float: left;
+          margin: 0 5px 15px 5px;
+
+          //座位
+          .student-item {
+            width: 50px;
+            height: 50px;
+            background: $fff;
+            border-radius: 5px;
+            @include student-item-show;
+            transition: .3s;
+          }
+          .student-item:hover {
+            cursor: pointer;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+
+    .student-detail {
+      float: left;
+      width: 240px;
+      height: 560px;
+      background: $fff;
+      @include border-right(10px);
+
+      button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .student-detail-txt {
+        overflow: hidden;
+        margin-bottom: 10px;
+        span {
+          float: left;
+          text-align: right;
+          width: 100px;
+          margin-right: 10px;
+        }
+        input {
+          float: left;
+          outline: none;
+          border: none;
+          width: 100px;
+        }
+      }
+    }
+    .student-info-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+
+.student-name {
+  color: $fff;
+  text-align: center;
+  margin-top: 5px;
+}
