@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.mgsystem.teacher.dao.SeatDao">
+
+	
+	<select id="findSeatById" resultType="cn.tedu.mgsystem.teacher.entity.Seat">
+		select id,trainingCampId,seatNumber,createdTeacher,modifiyTeacher,cadetId,
+		createdTime,modifiyTime,seatState from seat where id=#{id}
+	</select>
+	
+	<insert id="insertSeat">
+		insert into seat (TrainingCampId,seatNumber,createdTeacher,modifiyTeacher,cadetId,
+		createdTime,modifiyTime,seatState) 
+		values(#{seat.trainingCampId},#{seat.seatNumber},#{seat.createdTeacher},#{seat.modifiyTeacher},
+		#{seat.cadetId},#{seat.createdTime},#{seat.modifiyTime},#{seat.seatState})
+	</insert>
+	
+	<delete id="deleteSeat" parameterType="Integer">
+		delete from seat where id=#{id}
+	</delete>
+	
+	<update id="updateSeat">
+		update seat set 
+		TrainingCampId=#{seat.trainingCampId},seatNumber=#{seat.seatNumber},createdTeacher=#{seat.createdTeacher},
+		modifiyTeacher=#{seat.modifiyTeacher},cadetId=#{seat.cadetId},createdTime=#{seat.createdTime},
+		modifiyTime=#{seat.modifiyTime},seatState=#{seat.seatState} where id=#{seat.id}
+	</update>
+	
+</mapper> 

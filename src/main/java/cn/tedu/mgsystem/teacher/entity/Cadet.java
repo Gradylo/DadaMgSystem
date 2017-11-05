@@ -1,13 +1,17 @@
-package cn.tedu.mgsystem.teacher.dao;
+package cn.tedu.mgsystem.teacher.entity;
 
 import java.util.Date;
-
+/***
+ * 学员
+ * @author McGrady
+ *
+ */
 public class Cadet {
-	private int id;
+	private Integer id;
 	private String name;//姓名
 	private String educational;//教育水平
 	private String profession;//专业
-	private int isbasics;//是否有基础
+	private Integer isbasics;//是否有基础
 	private String source;//信息来源
 	private String info;//信息
 	private Date learntime;//学习时长
@@ -16,10 +20,10 @@ public class Cadet {
 	private String modifiyUser;//修改者
 	private Date createdTime;//创建时间
 	private Date modifiyTime;//修改时间
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -40,10 +44,10 @@ public class Cadet {
 	public void setProfession(String profession) {
 		this.profession = profession;
 	}
-	public int getIsbasics() {
+	public Integer getIsbasics() {
 		return isbasics;
 	}
-	public void setIsbasics(int isbasics) {
+	public void setIsbasics(Integer isbasics) {
 		this.isbasics = isbasics;
 	}
 	public String getSource() {

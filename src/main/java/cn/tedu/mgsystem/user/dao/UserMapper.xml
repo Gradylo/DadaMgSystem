@@ -8,4 +8,22 @@
 		resultType="cn.tedu.mgsystem.user.entity.User">
 		select * from user where account=#{user}
 	</select>
+	
+	<insert id="insertUser">
+		insert into user(account,password,name,ip,state,loginTime,createdTime,modifiyTime,createdUser,modifiyUser)
+		 values (#{user.account},#{user.password},#{user.name},#{user.ip},
+		 #{user.state},#{user.loginTime},#{user.createdTime},#{user.modifiyTime},#{user.createdUser},#{user.modifiyUser})
+	</insert>
+	
+	<delete id="deleteUser" parameterType="Integer">
+		delete from user where id=#{id}
+	</delete>
+	
+	<update id="updateUser">
+		update user set account=#{user.account},password=#{user.password},name=#{user.name},ip=#{user.ip},
+		state=#{user.state},loginTime=#{user.loginTime},
+		createdTime=#{user.createdTime},modifiyTime=#{user.modifiyTime},createdUser=#{user.createdUser},modifiyUser=#{user.modifiyUser} 
+		where id=#{user.id}
+	</update>
+	
 </mapper> 

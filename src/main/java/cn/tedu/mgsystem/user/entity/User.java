@@ -4,16 +4,16 @@ import java.util.Date;
 
 public class User {
 	private Integer id;
-	private String account;
-	private String password;
-	private String name;
-	private String ip;
-	private Integer state;
-	private Date loginTime;
-	private Date createdTime;
-	private Date modifiyTime;
-	private String createdUser;
-	private String modifiyUser;
+	private String account;//用户名
+	private String password;//密码
+	private String name;//名字
+	private String ip;//ip地址
+	private Integer state;//状态
+	private Date loginTime;//登录时间
+	private Date createdTime;//创建时间
+	private Date modifiyTime;//修改时间
+	private String createdUser;//创建用户
+	private String modifiyUser;//修改用户
 	public Integer getId() {
 		return id;
 	}

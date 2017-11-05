@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.mgsystem.teacher.dao.CadetDao">
+
+	<insert id="insertCadet">
+		insert into cadet 
+		(name,educational,profession,
+		isbasics,source,info,learningTime,
+		stage,createdUser,modifiyUser,createdTime,
+		modifiyTime) 
+		values
+		(#{cadet.name},#{cadet.educational},#{cadet.profession},
+		#{cadet.isbasics},#{cadet.source},#{cadet.info},
+		#{cadet.learntime},#{cadet.stage},#{cadet.createdUser},
+		#{cadet.modifiyUser},#{cadet.createdTime},#{cadet.modifiyTime})
+	</insert>
+	
+	<update id="updateCadet">
+		update cadet set 
+		name=#{cadet.name},educational=#{cadet.educational},profession=#{cadet.profession},
+		isbasics=#{cadet.isbasics},source=#{cadet.source},info=#{cadet.info},learningTime=#{cadet.learntime},
+		stage=#{cadet.stage},createdUser=#{cadet.createdUser},modifiyUser=#{cadet.modifiyUser},createdTime=#{cadet.createdTime},
+		modifiyTime=#{cadet.modifiyTime} 
+		where id=#{cadet.id}
+	</update>
+	
+	<select id="findCadetById" resultType="cn.tedu.mgsystem.teacher.entity.Cadet">
+		select 
+		id,name,educational,profession,
+		isbasics,source,info,learningTime,
+		stage,createdUser,modifiyUser,createdTime,
+		modifiyTime 
+		from cadet 
+		where id=#{id}
+	</select>
+	
+	
+	<delete id="deleteCadet">
+		delete from cadet where id=#{id}
+	</delete>
+	
+	
+	
+</mapper>
+
+
