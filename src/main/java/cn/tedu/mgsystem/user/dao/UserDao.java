@@ -1,6 +1,8 @@
 package cn.tedu.mgsystem.user.dao;
 
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -9,7 +11,7 @@ import cn.tedu.mgsystem.user.entity.User;
 @Repository
 public interface UserDao {
 	public User findByAccount(String account);
-	
+	public List<String> findUserPermissions(Integer userId);
 	/**新增用户*/
 	public int insertUser(@Param("user") User user);
 	

@@ -25,5 +25,13 @@
 		createdTime=#{user.createdTime},modifiyTime=#{user.modifiyTime},createdUser=#{user.createdUser},modifiyUser=#{user.modifiyUser} 
 		where id=#{user.id}
 	</update>
-	
+	<!-- 查询用户权限 -->
+	<select id="findUserPermissions"
+	        parameterType="integer" 
+	        resultType="string">
+		select 	m.info 
+		from userpermission up,user u ,permission m
+		where up.userId = u.id and up.permissionId = m.id 
+		and	u.id = #{id}
+	</select>
 </mapper> 
