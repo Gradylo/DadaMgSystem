@@ -1,5 +1,7 @@
 package cn.tedu.mgsystem.common.service;
 
+import cn.tedu.mgsystem.user.entity.User;
+
 public interface SysShiroService {
-	void login(String username,String password);
+	User login(String username,String password);
 }
